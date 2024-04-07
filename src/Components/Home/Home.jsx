@@ -1,4 +1,5 @@
 import 'animate.css';
+import Residentials from '../Residentials/Residentials';
 const Home = () => {
     return (
         <div>
@@ -88,6 +89,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            <Residentials></Residentials>
         </div>
     );
 };

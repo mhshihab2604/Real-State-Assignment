@@ -1,57 +1,75 @@
 [
     {
-      "estate_title": "Luxury Villa with Ocean View",
-      "id": "ABC123",
-      "segment_name": "Residential",
-      "description": "This stunning villa offers panoramic views of the ocean, with modern amenities and spacious living areas.",
-      "price": "$2,500,000",
-      "status": "sale",
-      "image_url": "https://example.com/image1.jpg"
+        "estate_title": "Luxury Villa with Ocean View",
+        "id": "ABC123",
+        "segment_name": "Residential",
+        "description": "This stunning villa offers panoramic views of the ocean, with modern amenities and spacious living areas.",
+        "price": "$2,500,000",
+        "status": "Sale",
+        "square_feet": 5000,
+        "landlord": "John Doe",
+        "year_of_build": 2008,
+        "image_url": "https://i.ibb.co/qNfZY06/home1.jpg"
     },
     {
-      "estate_title": "Downtown Condo",
-      "id": "DEF456",
-      "segment_name": "Condominium",
-      "description": "Located in the heart of the city, this condo provides easy access to urban amenities and vibrant nightlife.",
-      "price": "$1,200,000",
-      "status": "sale",
-      "image_url": "https://example.com/image2.jpg"
+        "estate_title": "Downtown Condo",
+        "id": "DEF456",
+        "segment_name": "Condominium",
+        "description": "Located in the heart of the city, this condo provides easy access to urban amenities and vibrant nightlife.",
+        "price": "$1,200,000",
+        "status": "Sale",
+        "square_feet": 1200,
+        "landlord": "Jane Smith",
+        "year_of_build": 2015,
+        "image_url": "https://i.ibb.co/tsS6DVt/home-2.jpg"
     },
     {
-      "estate_title": "Cozy Suburban Home",
-      "id": "GHI789",
-      "segment_name": "Residential",
-      "description": "Charming home nestled in a quiet suburban neighborhood, featuring a spacious backyard and updated interiors.",
-      "price": "$600,000",
-      "status": "sale",
-      "image_url": "https://example.com/image3.jpg"
+        "estate_title": "Cozy Suburban Home",
+        "id": "GHI789",
+        "segment_name": "Residential",
+        "description": "Charming home nestled in a quiet suburban neighborhood, featuring a spacious backyard and updated interiors.",
+        "price": "$600,000",
+        "status": "Sale",
+        "square_feet": 2500,
+        "landlord": "Emily Johnson",
+        "year_of_build": 2000,
+        "image_url": "https://i.ibb.co/xXN1dtY/home3.jpg"
     },
     {
-      "estate_title": "Downtown Loft for Rent",
-      "id": "JKL012",
-      "segment_name": "Loft",
-      "description": "Industrial-style loft apartment available for rent, boasting exposed brick walls and high ceilings.",
-      "price": "$3,500/month",
-      "status": "rent",
-      "image_url": "https://example.com/image4.jpg"
+        "estate_title": "Downtown Loft for Rent",
+        "id": "JKL012",
+        "segment_name": "Loft",
+        "description": "Industrial-style loft apartment available for rent, boasting exposed brick walls and high ceilings.",
+        "price": "$3,500/month",
+        "status": "Rent",
+        "square_feet": 800,
+        "landlord": "Adam Williams",
+        "year_of_build": 2012,
+        "image_url": "https://i.ibb.co/gZNHrwk/banner5.jpg"
     },
     {
-      "estate_title": "Seaside Cottage",
-      "id": "MNO345",
-      "segment_name": "Vacation Rental",
-      "description": "Quaint cottage steps away from the beach, perfect for a relaxing getaway with family and friends.",
-      "price": "$250/night",
-      "status": "rent",
-      "image_url": "https://example.com/image5.jpg"
+        "estate_title": "Seaside Cottage",
+        "id": "MNO345",
+        "segment_name": "Vacation Rental",
+        "description": "Quaint cottage steps away from the beach, perfect for a relaxing getaway with family and friends.",
+        "price": "$250/night",
+        "status": "Rent",
+        "square_feet": 1000,
+        "landlord": "Sarah Brown",
+        "year_of_build": 1995,
+        "image_url": "https://i.ibb.co/Xs2p1tR/home6.jpg"
     },
     {
-      "estate_title": "Rural Farmhouse Retreat",
-      "id": "PQR678",
-      "segment_name": "Farmhouse",
-      "description": "Escape to the countryside in this charming farmhouse retreat, surrounded by picturesque views and tranquil ambiance.",
-      "price": "$1,800/week",
-      "status": "rent",
-      "image_url": "https://example.com/image6.jpg"
+        "estate_title": "Rural Farmhouse Retreat",
+        "id": "PQR678",
+        "segment_name": "Farmhouse",
+        "description": "Escape to the countryside in this charming farmhouse retreat, surrounded by picturesque views and tranquil ambiance.",
+        "price": "$1,800/week",
+        "status": "Rent",
+        "square_feet": 3000,
+        "landlord": "Michael Davis",
+        "year_of_build": 1980,
+        "image_url": "https://i.ibb.co/RzL824X/home5.jpg"
     }
-  ]
-  
+]
+
