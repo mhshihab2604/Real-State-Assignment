@@ -1,0 +1,57 @@
+[
+    {
+      "estate_title": "Luxury Villa with Ocean View",
+      "id": "ABC123",
+      "segment_name": "Residential",
+      "description": "This stunning villa offers panoramic views of the ocean, with modern amenities and spacious living areas.",
+      "price": "$2,500,000",
+      "status": "sale",
+      "image_url": "https://example.com/image1.jpg"
+    },
+    {
+      "estate_title": "Downtown Condo",
+      "id": "DEF456",
+      "segment_name": "Condominium",
+      "description": "Located in the heart of the city, this condo provides easy access to urban amenities and vibrant nightlife.",
+      "price": "$1,200,000",
+      "status": "sale",
+      "image_url": "https://example.com/image2.jpg"
+    },
+    {
+      "estate_title": "Cozy Suburban Home",
+      "id": "GHI789",
+      "segment_name": "Residential",
+      "description": "Charming home nestled in a quiet suburban neighborhood, featuring a spacious backyard and updated interiors.",
+      "price": "$600,000",
+      "status": "sale",
+      "image_url": "https://example.com/image3.jpg"
+    },
+    {
+      "estate_title": "Downtown Loft for Rent",
+      "id": "JKL012",
+      "segment_name": "Loft",
+      "description": "Industrial-style loft apartment available for rent, boasting exposed brick walls and high ceilings.",
+      "price": "$3,500/month",
+      "status": "rent",
+      "image_url": "https://example.com/image4.jpg"
+    },
+    {
+      "estate_title": "Seaside Cottage",
+      "id": "MNO345",
+      "segment_name": "Vacation Rental",
+      "description": "Quaint cottage steps away from the beach, perfect for a relaxing getaway with family and friends.",
+      "price": "$250/night",
+      "status": "rent",
+      "image_url": "https://example.com/image5.jpg"
+    },
+    {
+      "estate_title": "Rural Farmhouse Retreat",
+      "id": "PQR678",
+      "segment_name": "Farmhouse",
+      "description": "Escape to the countryside in this charming farmhouse retreat, surrounded by picturesque views and tranquil ambiance.",
+      "price": "$1,800/week",
+      "status": "rent",
+      "image_url": "https://example.com/image6.jpg"
+    }
+  ]
+  
