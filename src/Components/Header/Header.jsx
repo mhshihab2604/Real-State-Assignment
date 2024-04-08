@@ -1,8 +1,10 @@
 import {Link} from "react-router-dom";
+import useAuth from "../useAuth/useAuth";
 const Header = () => {
+    const {logout,user} = useAuth()
+    console.log(user);
     return (
         <div>
-
             <div className="navbar bg-[#1A1D1F]">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -36,7 +38,7 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn bg-[#71B100] text-white border-none">Sign In</a>
+                    <button onClick={logout} className="btn bg-[#71B100] text-white border-none">Logout</button>
                 </div>
             </div>
         </div>
