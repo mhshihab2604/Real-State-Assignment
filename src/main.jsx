@@ -11,6 +11,7 @@ import ErrorPage from './Components/ErrorPage/ErrorPage';
 import Home from './Components/Home/Home';
 import Register from './Components/Register/Register';
 import Login from './Components/Login/Login';
+import ResidentialDetails from './Components/ResidentialDetails/ResidentialDetails';
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,11 @@ const router = createBrowserRouter([
       {
         path: "/login",
         element: <Login></Login>
+      },
+      {
+        path: "/residential/:id",
+        element: <ResidentialDetails></ResidentialDetails>,
+        loader: () => fetch("../state.json")
       }
     ]
   },

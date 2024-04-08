@@ -11,7 +11,8 @@ const Residentials = () => {
     }, [])
     return (
         <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl lg:text-5xl font-bold  text-center mx-auto mt-20">Properties For Sale & Rent</h2>
+            <p className="text-center text-[#71B100] mt-20">Our Featured Properties For Sale and Rent</p>
+            <h2 className="text-3xl lg:text-5xl font-bold  text-center mx-auto">Properties For Sale & Rent</h2>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-10 mx-2">
                 {residentials.map(residential => <Residential key={residential.id} residential={residential}></Residential>)}
             </div>

@@ -9,7 +9,14 @@
         "square_feet": 5000,
         "landlord": "John Doe",
         "year_of_build": 2008,
-        "image_url": "https://i.ibb.co/qNfZY06/home1.jpg"
+        "image_url": "https://i.ibb.co/qNfZY06/home1.jpg",
+        "location": "Coastal area, California",
+        "facilities": [
+            "Swimming pool",
+            "Gym",
+            "Jacuzzi",
+            "Garden"
+        ]
     },
     {
         "estate_title": "Downtown Condo",
@@ -21,7 +28,13 @@
         "square_feet": 1200,
         "landlord": "Jane Smith",
         "year_of_build": 2015,
-        "image_url": "https://i.ibb.co/tsS6DVt/home-2.jpg"
+        "image_url": "https://i.ibb.co/tsS6DVt/home-2.jpg",
+        "location": "Downtown, New York City",
+        "facilities": [
+            "Security",
+            "Parking",
+            "Fitness center"
+        ]
     },
     {
         "estate_title": "Cozy Suburban Home",
@@ -33,7 +46,13 @@
         "square_feet": 2500,
         "landlord": "Emily Johnson",
         "year_of_build": 2000,
-        "image_url": "https://i.ibb.co/xXN1dtY/home3.jpg"
+        "image_url": "https://i.ibb.co/xXN1dtY/home3.jpg",
+        "location": "Suburban area, Chicago",
+        "facilities": [
+            "Backyard",
+            "Modern kitchen",
+            "Fireplace"
+        ]
     },
     {
         "estate_title": "Downtown Loft for Rent",
@@ -45,7 +64,13 @@
         "square_feet": 800,
         "landlord": "Adam Williams",
         "year_of_build": 2012,
-        "image_url": "https://i.ibb.co/gZNHrwk/banner5.jpg"
+        "image_url": "https://i.ibb.co/gZNHrwk/banner5.jpg",
+        "location": "Downtown, Los Angeles",
+        "facilities": [
+            "Exposed brick walls",
+            "High ceilings",
+            "Open floor plan"
+        ]
     },
     {
         "estate_title": "Seaside Cottage",
@@ -57,7 +82,13 @@
         "square_feet": 1000,
         "landlord": "Sarah Brown",
         "year_of_build": 1995,
-        "image_url": "https://i.ibb.co/Xs2p1tR/home6.jpg"
+        "image_url": "https://i.ibb.co/Xs2p1tR/home6.jpg",
+        "location": "Seaside, Florida",
+        "facilities": [
+            "Beach access",
+            "Deck/patio",
+            "Fire pit"
+        ]
     },
     {
         "estate_title": "Rural Farmhouse Retreat",
@@ -69,7 +100,12 @@
         "square_feet": 3000,
         "landlord": "Michael Davis",
         "year_of_build": 1980,
-        "image_url": "https://i.ibb.co/RzL824X/home5.jpg"
+        "image_url": "https://i.ibb.co/RzL824X/home5.jpg",
+        "location": "Rural area, Vermont",
+        "facilities": [
+            "Scenic views",
+            "Front porch",
+            "Gardens"
+        ]
     }
 ]
-
