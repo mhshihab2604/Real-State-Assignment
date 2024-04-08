@@ -13,6 +13,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 
 const router = createBrowserRouter([
   {
@@ -35,7 +36,9 @@ const router = createBrowserRouter([
       },
       {
         path: "/residential/:id",
-        element: <ResidentialDetails></ResidentialDetails>,
+        element: <PrivateRoute>
+          <ResidentialDetails></ResidentialDetails>
+        </PrivateRoute>,
         loader: () => fetch("../state.json")
       }
     ]

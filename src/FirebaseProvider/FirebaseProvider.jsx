@@ -1,4 +1,4 @@
-import { GithubAuthProvider, GoogleAuthProvider, TwitterAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
+import { GithubAuthProvider, GoogleAuthProvider, TwitterAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import { createContext, useEffect, useState } from "react";
 import auth from "../Firebase/firebase.config";
 
@@ -11,31 +11,44 @@ const twitterProvider = new TwitterAuthProvider();
 
 const FirebaseProvider = ({children}) => {
     const [user,setUser]= useState(null)
-    console.log(user);
-
+    const [loading, setLoading] = useState(true)
+    console.log(loading);
     // create user
     const createUser = (email, password) => {
+            setLoading(true)
         return createUserWithEmailAndPassword(auth, email, password)
-        // .then(result => console.log(result.user))
+    }
+
+    // update profile
+    const UpdateUserProfile =(name, image) => {
+        return updateProfile(auth.currentUser, {
+            displayName: name, 
+            photoURL: image
+          })
+          
     }
 
     // sign in user
     const signInUser = ( email, password) => {
+            setLoading(true)
         return signInWithEmailAndPassword(auth, email, password)
     }
 
     // google login
     const googleLogin = () => {
+            setLoading(true)
         return signInWithPopup(auth, googleProvider)
     }
 
     // github login
     const githubLogin = () =>{
+            setLoading(true)
         return signInWithPopup(auth, githubProvider)
     }
 
     // twitterProvider
     const twitterLogin = () => {
+            setLoading(true)
         return signInWithPopup(auth, twitterProvider)
     }
 
@@ -47,9 +60,11 @@ const FirebaseProvider = ({children}) => {
 
     // observer
     useEffect(() => {
-        onAuthStateChanged(auth, (user) => {
+        const unsubscribe = onAuthStateChanged(auth, (user) => {
            setUser(user)
+           setLoading(false)
         });
+        return () => unsubscribe();
     },[])
 
     const allValues = {
@@ -60,6 +75,8 @@ const FirebaseProvider = ({children}) => {
         logout,
         user,
         twitterLogin,
+        loading,
+        UpdateUserProfile
     }
     return (
        <AuthContext.Provider value={allValues}>
