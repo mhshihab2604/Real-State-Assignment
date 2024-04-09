@@ -21,12 +21,12 @@ const Login = () => {
     const { email, password } = data;
     signInUser(email, password).then((result) => {
       if (result.user) {
-        toast.success("you have successfully logged in");
+        toast.success("You have successfully logged in");
         navigate(from);
       }
     })
     .catch(()=>{
-      toast.error('email password invalid')
+      toast.error('Email or Password invalid')
   })
   };
   return (

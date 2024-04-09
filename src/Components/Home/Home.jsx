@@ -97,30 +97,30 @@ const Home = () => {
                 </div>
                 <div className='flex justify-center items-center mt-10'>
                     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5'>
-                        <div className="max-w-xs dark:text-gray-900">
-                            <img src="https://i.ibb.co/VxY8tDy/shundori1.jpg" alt="" className="object-cover object-center w-80 h-96" />
-                            <div className="mb-2 bg-base-100 shadow-2xl text-center p-2">
-                                <h2 className="text-lg font-semibold tracking-wide">Fatma Hassan</h2>
+                        <div className="max-w-xs bg-base-100 shadow-2xl border-2 dark:text-gray-900">
+                            <img src="https://i.ibb.co/7gBZR8n/Developer-removebg-preview.png" alt="" className="object-cover object-center w-80 h-96" />
+                            <div className="mb-2  text-center p-2">
+                                <h2 className="text-lg font-semibold tracking-wide">MH Shihab</h2>
                                 <small className="dark:text-[#71B100]">Buying Agent</small>
                             </div>
                         </div>
-                        <div className="max-w-xs dark:text-gray-900">
-                            <img src="https://i.ibb.co/C76YHft/sundor2.jpg" alt="" className="object-cover object-center w-80 h-96" />
-                            <div className="mb-2 bg-base-100 shadow-2xl text-center p-2">
+                        <div className="max-w-xs bg-base-100 shadow-2xl border-2 dark:text-gray-900">
+                            <img src="https://i.ibb.co/kyPgJ7f/Developer2-removebg-preview.png" alt="" className="object-cover object-center w-80 h-96" />
+                            <div className="mb-2 text-center p-2">
                                 <h2 className="text-lg font-semibold tracking-wide">Ghaly Marco</h2>
                                 <small className="dark:text-[#71B100]">Real Estate Broker</small>
                             </div>
                         </div>
-                        <div className="max-w-xs dark:text-gray-900">
+                        <div className="max-w-xs bg-base-100 shadow-2xl border-2 dark:text-gray-900">
                             <img src="https://i.ibb.co/cNkPDLc/shundor3.jpg" alt="" className="object-cover object-center w-80 h-96" />
-                            <div className="mb-2 bg-base-100 shadow-2xl text-center p-2">
+                            <div className="mb-2 text-center p-2">
                                 <h2 className="text-lg font-semibold tracking-wide">Aya Magdy</h2>
                                 <small className="dark:text-[#71B100]">Real Estate Broker</small>
                             </div>
                         </div>
-                        <div className="max-w-xs dark:text-gray-900">
+                        <div className="max-w-xs bg-base-100 shadow-2xl border-2 dark:text-gray-900">
                             <img src="https://i.ibb.co/RY4qT21/shundor4.jpg" alt="" className="object-cover object-center w-80 h-96" />
-                            <div className="mb-2 bg-base-100 shadow-2xl text-center p-2">
+                            <div className="mb-2 text-center p-2">
                                 <h2 className="text-lg font-semibold tracking-wide">Arafa El Sherief</h2>
                                 <small className="dark:text-[#71B100]">Team Leader</small>
                             </div>

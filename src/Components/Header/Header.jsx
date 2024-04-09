@@ -50,7 +50,6 @@ const Header = () => {
             </ul>
           </div>
           <img src="https://i.ibb.co/qd1mwsm/Logo.png" alt="" />
-          {/* <img className="bg-white" src="https://i.ibb.co/xHgmC4h/estate1.png" alt="" /> */}
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 text-white gap-5">
@@ -73,17 +72,12 @@ const Header = () => {
               alt=""
               onClick={() => setShowDropdown(!showDropdown)}
             />
-            {/* <button onClick={handleSignOut}></button> */}
-            {/* Open the modal using document.getElementById('ID').showModal() method */}
             <div className={showDropdown ? "userDropDown showDropdown space-y-2" : "userDropDown"} >
-                <h1 className="text-xl font-medium">{user.displayName}</h1>
+                <h1 className="text-xl font-medium">Name:{user.displayName}</h1>
                 <h1 className="font-medium">{user.email}</h1>
                 <button
                 onClick={handleSignOut}
-                className="p-1 rounded border-2  bg-[#71B100] text-white border-none"
-            >
-              Logout
-            </button>
+                className="p-1 rounded  bg-[#71B100] text-white border-none">Logout</button>
             </div>
           </div>
         ) : (

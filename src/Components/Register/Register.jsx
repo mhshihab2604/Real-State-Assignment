@@ -34,12 +34,12 @@ const Register = () => {
             UpdateUserProfile(name, image)
             .then(() => {
                 setRefetchUser(!refetchUser)
-                toast.success("you have successfully register")
+                toast.success("You have successfully register")
                 navigate(from);
             })
         })
         .catch(()=>{
-            setRegisterError("email or password invalid")
+            setRegisterError("This email is already registered")
         })
     }
 

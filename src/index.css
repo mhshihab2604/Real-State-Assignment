@@ -10,9 +10,8 @@ body{
     position: absolute;
     z-index: 9999;
     background-color: white;
-    border: 2px solid #71B100;
     border-radius: 16px;
-    box-shadow: 0 2px 16.8px 3.2px #00264214;
+    box-shadow: 0 2px 5px 5px #00264214;
     top: 53px;
     display: flex;
     justify-content: space-between;
@@ -30,38 +29,6 @@ body{
     padding: 50px !important;
     transition: 0.3s;
 }
-
-
-/* .userDropDown a {
-    padding: 7px 0px 7px 5px;
-    width: calc(100% - 5px);
-    color: black;
-    border-bottom: 1px solid #c1c1c1;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10px;
-    transition: 0.3s;
-
-} */
-
-/* .logoutBtn {
-    padding: 7px 0px 7px 5px;
-    width: calc(100% - 5px);
-    color: black;
-    border: none;
-    border-bottom: 1px solid #c1c1c1;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10px;
-    background-color: transparent;
-    font-size: 16px;
-    cursor: pointer;
-
-} */
-
-
 .userDropDown a:hover {
     background-color: #c0c0c047;
 }
