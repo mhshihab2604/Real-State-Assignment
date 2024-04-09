@@ -14,6 +14,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
+import { Toaster } from 'sonner';
 
 const router = createBrowserRouter([
   {
@@ -47,6 +48,7 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
    <FirebaseProvider>
+    <Toaster position='top-center'></Toaster>
     <RouterProvider router={router} />
    </FirebaseProvider>
   </React.StrictMode>,

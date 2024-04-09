@@ -10,6 +10,7 @@ const githubProvider = new GithubAuthProvider();
 const twitterProvider = new TwitterAuthProvider();
 
 const FirebaseProvider = ({children}) => {
+    const [refetchUser,setRefetchUser] = useState(false)
     const [user,setUser]= useState(null)
     const [loading, setLoading] = useState(true)
     console.log(loading);
@@ -65,7 +66,7 @@ const FirebaseProvider = ({children}) => {
            setLoading(false)
         });
         return () => unsubscribe();
-    },[])
+    },[refetchUser])
 
     const allValues = {
         createUser,
@@ -76,7 +77,9 @@ const FirebaseProvider = ({children}) => {
         user,
         twitterLogin,
         loading,
-        UpdateUserProfile
+        UpdateUserProfile,
+        refetchUser,
+        setRefetchUser
     }
     return (
        <AuthContext.Provider value={allValues}>

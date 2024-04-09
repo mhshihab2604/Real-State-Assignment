@@ -1,10 +1,20 @@
 import { IoIosCall } from "react-icons/io";
 import { BiSolidMessage } from "react-icons/bi";
 import { GoClockFill } from "react-icons/go";
+import Marquee from "react-fast-marquee";
 const Footer = () => {
     return (
         <div>
-            <footer className="p-10 bg-[#1A1D1F] text-white mt-40">
+            <div className='mt-40 mx-auto bg-[#F5F5F5] pb-10'>
+                <Marquee speed={100}>
+                    <img src="https://i.ibb.co/xHgmC4h/estate1.png" alt="" />
+                    <img src="https://i.ibb.co/z85FrQb/estate2.png" alt="" />
+                    <img src="https://i.ibb.co/jhC6j9H/estate3.png" alt="" />
+                    <img src="https://i.ibb.co/NxKN6y0/estate4.png" alt="" />
+                    <img src="https://i.ibb.co/ftkBpRx/estate5.png" alt="" />
+                </Marquee>
+            </div>
+            <footer className="p-10 bg-[#1A1D1F] text-white">
                 <div className="footer items-center max-w-7xl mx-auto">
                     <aside className="space-y-5">
                         <p className="text-[#71B100]">Contact us</p>

@@ -1,4 +1,4 @@
-import {useLoaderData, useParams} from "react-router-dom";
+import {Link, useLoaderData, useParams} from "react-router-dom";
 import { MdDateRange } from "react-icons/md";
 import { PiSquareLogoBold } from "react-icons/pi";
 import { FaUserAlt } from "react-icons/fa";
@@ -31,7 +31,7 @@ const ResidentialDetails = () => {
                             <p>{residential.price}</p>
                             <p className="flex items-center gap-1"><PiSquareLogoBold></PiSquareLogoBold>{residential.square_feet}SqFt</p>
                         </div>
-                        <button className="btn w-full text-white bg-[#71B100]">View Property</button>
+                        <Link to="/"><button className="btn w-full text-white bg-[#71B100]">View Property</button></Link>
                     </div>
                     
                 </div>

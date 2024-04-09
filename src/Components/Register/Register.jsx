@@ -4,8 +4,11 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { FaEye } from "react-icons/fa";
 import { FaEyeSlash } from "react-icons/fa";
+import { toast } from "sonner";
+
 const Register = () => {
-    const {createUser, UpdateUserProfile} = useAuth();
+    
+    const {createUser, UpdateUserProfile,refetchUser,setRefetchUser} = useAuth();
     const [registerError, setRegisterError] = useState("")
     const {register,handleSubmit,formState: { errors },} = useForm();
     const [showPassword, setShowPassword] = useState(false);
@@ -30,17 +33,22 @@ const Register = () => {
         .then(() => {
             UpdateUserProfile(name, image)
             .then(() => {
+                setRefetchUser(!refetchUser)
+                toast.success("you have successfully register")
                 navigate(from);
             })
+        })
+        .catch(()=>{
+            setRegisterError("email or password invalid")
         })
     }
 
     return (
         <div>
             <div
-                className="w-full max-w-md p-8 space-y-3 rounded-xl dark:bg-gray-50 dark:text-gray-800 mx-auto mt-10">
-                <h1 className="text-2xl font-bold text-center">Register Now</h1>
-                <form onSubmit={handleSubmit(onSubmit)} noValidate="" action="" className="space-y-6">
+                className="w-full max-w-md p-8 space-y-3 rounded-xl dark:bg-base-100 shadow-2xl dark:text-gray-800 mx-auto mt-10">
+                <h1 className="text-3xl font-bold text-center">Register Now</h1>
+                <form onSubmit={handleSubmit(onSubmit)} noValidate="" action="" className="space-y-6 pt-5">
                     <div className="space-y-1 text-sm">
                         <label htmlFor="username" className="block dark:text-gray-600">Name</label>
                         <input
@@ -48,7 +56,7 @@ const Register = () => {
                             name="name"
                             id="username"
                             placeholder="Name"
-                            className="w-full px-4 py-3 rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 focus:dark:border-violet-600"
+                            className="w-full border-2 px-4 py-3 rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 focus:dark:border-violet-600"
                             {...register("name", { required: true })}/>
                             {errors.name && <span className="text-red-500">This field is required</span>}
                     </div>
@@ -59,7 +67,7 @@ const Register = () => {
                             name="image"
                             id="username"
                             placeholder="Image URL"
-                            className="w-full px-4 py-3 rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 focus:dark:border-violet-600"
+                            className="w-full border-2 px-4 py-3 rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 focus:dark:border-violet-600"
                             {...register("image", { required: true })} />
                     </div>
                     <div className="space-y-1 text-sm">
@@ -69,7 +77,7 @@ const Register = () => {
                             name="email"
                             id="username"
                             placeholder="Email"
-                            className="w-full px-4 py-3 rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 focus:dark:border-violet-600"
+                            className="w-full border-2 px-4 py-3 rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 focus:dark:border-violet-600"
                             {...register("email", { required: true })} />
                             {errors.email && <span className="text-red-500">This field is required</span>}
                     </div>
@@ -80,9 +88,9 @@ const Register = () => {
                             name="password"
                             id="password"
                             placeholder="Password"
-                            className="w-full px-4 py-3 rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 focus:dark:border-violet-600"
+                            className="w-full border-2 px-4 py-3 rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800 focus:dark:border-violet-600"
                             {...register("password", { required: true })}/>
-                            <span className="absolute top-1/2 right-1" onClick={() => setShowPassword(!showPassword)}>
+                            <span className="absolute top-9 right-1" onClick={() => setShowPassword(!showPassword)}>
                                 {
 
                                     showPassword ? <FaEyeSlash></FaEyeSlash> : <FaEye></FaEye>

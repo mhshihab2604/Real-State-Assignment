@@ -90,6 +90,44 @@ const Home = () => {
                 </div>
             </div>
             <Residentials></Residentials>
+            <div className='mt-28'>
+                <div className='text-center space-y-2'>
+                    <p className='text-[#71B100]'>We are Offering the Best Real Estate</p>
+                    <h1 className='text-4xl font-semibold'>Best House to Purchase</h1>
+                </div>
+                <div className='flex justify-center items-center mt-10'>
+                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5'>
+                        <div className="max-w-xs dark:text-gray-900">
+                            <img src="https://i.ibb.co/VxY8tDy/shundori1.jpg" alt="" className="object-cover object-center w-80 h-96" />
+                            <div className="mb-2 bg-base-100 shadow-2xl text-center p-2">
+                                <h2 className="text-lg font-semibold tracking-wide">Fatma Hassan</h2>
+                                <small className="dark:text-[#71B100]">Buying Agent</small>
+                            </div>
+                        </div>
+                        <div className="max-w-xs dark:text-gray-900">
+                            <img src="https://i.ibb.co/C76YHft/sundor2.jpg" alt="" className="object-cover object-center w-80 h-96" />
+                            <div className="mb-2 bg-base-100 shadow-2xl text-center p-2">
+                                <h2 className="text-lg font-semibold tracking-wide">Ghaly Marco</h2>
+                                <small className="dark:text-[#71B100]">Real Estate Broker</small>
+                            </div>
+                        </div>
+                        <div className="max-w-xs dark:text-gray-900">
+                            <img src="https://i.ibb.co/cNkPDLc/shundor3.jpg" alt="" className="object-cover object-center w-80 h-96" />
+                            <div className="mb-2 bg-base-100 shadow-2xl text-center p-2">
+                                <h2 className="text-lg font-semibold tracking-wide">Aya Magdy</h2>
+                                <small className="dark:text-[#71B100]">Real Estate Broker</small>
+                            </div>
+                        </div>
+                        <div className="max-w-xs dark:text-gray-900">
+                            <img src="https://i.ibb.co/RY4qT21/shundor4.jpg" alt="" className="object-cover object-center w-80 h-96" />
+                            <div className="mb-2 bg-base-100 shadow-2xl text-center p-2">
+                                <h2 className="text-lg font-semibold tracking-wide">Arafa El Sherief</h2>
+                                <small className="dark:text-[#71B100]">Team Leader</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };
