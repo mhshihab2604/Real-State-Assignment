@@ -41,6 +41,12 @@ const Header = () => {
               <Link className="hover:bg-[#71B100] p-5" to="/">
                 Home
               </Link>
+              <Link className="hover:bg-[#71B100] p-5" to="/aboutUs">
+              About Us
+            </Link>
+            <Link className="hover:bg-[#71B100] p-5" to="/contact">
+              Contact
+            </Link>
               <Link className="hover:bg-[#71B100] p-5" to="/register">
                 Register
               </Link>
@@ -55,6 +61,12 @@ const Header = () => {
           <ul className="menu menu-horizontal px-1 text-white gap-5">
             <Link className="hover:bg-[#71B100] p-5" to="/">
               Home
+            </Link>
+            <Link className="hover:bg-[#71B100] p-5" to="/aboutUs">
+              About Us
+            </Link>
+            <Link className="hover:bg-[#71B100] p-5" to="/contact">
+              Contact
             </Link>
             <Link className="hover:bg-[#71B100] p-5" to="/register">
               Register
@@ -82,12 +94,14 @@ const Header = () => {
           </div>
         ) : (
           <div className="navbar-end">
-            <button
-              onClick={logout}
-              className="btn bg-[#71B100] text-white border-none"
-            >
-              Login
-            </button>
+            <Link to="/login">
+              <button
+                onClick={logout}
+                className="btn bg-[#71B100] text-white border-none"
+              >
+                Login
+              </button>
+            </Link>
           </div>
         )}
       </div>

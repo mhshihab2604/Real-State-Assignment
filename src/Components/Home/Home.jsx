@@ -1,5 +1,6 @@
 import 'animate.css';
 import Residentials from '../Residentials/Residentials';
+
 const Home = () => {
     return (
         <div>
@@ -88,7 +89,7 @@ const Home = () => {
                         <a href="#slide1" className="btn btn-square">❯</a>
                     </div>
                 </div>
-            </div>
+            </div> 
             <Residentials></Residentials>
             <div className='mt-28'>
                 <div className='text-center space-y-2'>
@@ -98,14 +99,14 @@ const Home = () => {
                 <div className='flex justify-center items-center mt-10'>
                     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5'>
                         <div className="max-w-xs bg-base-100 shadow-2xl border-2 dark:text-gray-900">
-                            <img src="https://i.ibb.co/7gBZR8n/Developer-removebg-preview.png" alt="" className="object-cover object-center w-80 h-96" />
+                            <img src="https://i.ibb.co/sqcR3vd/Developer-removebg-preview-removebg-preview.jpg" alt="" className="object-cover object-center w-80 h-96" />
                             <div className="mb-2  text-center p-2">
                                 <h2 className="text-lg font-semibold tracking-wide">MH Shihab</h2>
                                 <small className="dark:text-[#71B100]">Buying Agent</small>
                             </div>
                         </div>
                         <div className="max-w-xs bg-base-100 shadow-2xl border-2 dark:text-gray-900">
-                            <img src="https://i.ibb.co/kyPgJ7f/Developer2-removebg-preview.png" alt="" className="object-cover object-center w-80 h-96" />
+                            <img src="https://i.ibb.co/rfkmwRf/Developer2-removebg-preview-removebg-preview.jpg" alt="" className="object-cover object-center w-80 h-96" />
                             <div className="mb-2 text-center p-2">
                                 <h2 className="text-lg font-semibold tracking-wide">Ghaly Marco</h2>
                                 <small className="dark:text-[#71B100]">Real Estate Broker</small>
