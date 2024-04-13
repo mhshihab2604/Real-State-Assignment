@@ -18,7 +18,6 @@ import { Toaster } from 'sonner';
 import Contact from './Components/Contact/Contact';
 import AboutUs from './Components/AboutUs/AboutUs';
 import UpdateProfile from './Components/UpdateProfile/UpdateProfile';
-import ProfilePage from './Components/ProfilePage/ProfilePage';
 
 const router = createBrowserRouter([
   {
@@ -47,10 +46,6 @@ const router = createBrowserRouter([
       {
         path: "/updateProfile",
         element: <UpdateProfile></UpdateProfile>
-      },
-      {
-        path: "/profilePage",
-        element: <ProfilePage></ProfilePage>
       },
       {
         path: "/login",
