@@ -38,21 +38,24 @@ const Header = () => {
               tabIndex={0}
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 text-black lg:text-white gap-5 shadow bg-base-100 rounded-box w-52"
             >
-              <Link className="hover:bg-[#71B100] p-5" to="/">
-                Home
-              </Link>
-              <Link className="hover:bg-[#71B100] p-5" to="/aboutUs">
+            <Link className="hover:bg-[#71B100] p-5" to="/">
+              Home
+            </Link>
+            <Link className="hover:bg-[#71B100] p-5" to="/aboutUs">
               About Us
             </Link>
             <Link className="hover:bg-[#71B100] p-5" to="/contact">
               Contact
             </Link>
-              <Link className="hover:bg-[#71B100] p-5" to="/register">
-                Register
-              </Link>
-              <Link className="hover:bg-[#71B100] p-5" to="/login">
-                Login
-              </Link>
+            <Link className="hover:bg-[#71B100] p-5" to="/register">
+              Register
+            </Link>
+            <Link className="hover:bg-[#71B100] p-5" to="/login">
+              Login
+            </Link>
+            <Link className="hover:bg-[#71B100] p-5" to="/updateProfile">
+              Update Profile
+            </Link>
             </ul>
           </div>
           <img src="https://i.ibb.co/qd1mwsm/Logo.png" alt="" />
@@ -74,6 +77,9 @@ const Header = () => {
             <Link className="hover:bg-[#71B100] p-5" to="/login">
               Login
             </Link>
+            <Link className="hover:bg-[#71B100] p-5" to="/updateProfile">
+              Update Profile
+            </Link>
           </ul>
         </div>
         {user ? (
@@ -90,6 +96,8 @@ const Header = () => {
                 <button
                 onClick={handleSignOut}
                 className="p-1 rounded  bg-[#71B100] text-white border-none">Logout</button>
+
+                <Link to='/profilePage'>User Profile</Link>
             </div>
           </div>
         ) : (

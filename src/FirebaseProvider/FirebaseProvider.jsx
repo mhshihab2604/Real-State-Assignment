@@ -69,6 +69,7 @@ const FirebaseProvider = ({children}) => {
     },[refetchUser])
 
     const allValues = {
+        setUser,
         createUser,
         signInUser,
         googleLogin,
