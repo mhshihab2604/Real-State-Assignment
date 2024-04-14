@@ -1,9 +1,12 @@
 import 'animate.css';
 import Residentials from '../Residentials/Residentials';
-
+import { Helmet } from 'react-helmet';
 const Home = () => {
     return (
         <div>
+            <Helmet>
+                <title>Home</title>
+            </Helmet>
             <div className="carousel w-full">
                 <div id="slide1" className="hero carousel-item relative w-full h-full lg:h-[700px]" style={{backgroundImage: 'url(https://i.ibb.co/thQC3pg/banner1.jpg)'}}>
                     <div className="hero-overlay"></div>

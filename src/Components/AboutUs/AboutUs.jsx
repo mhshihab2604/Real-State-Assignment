@@ -1,7 +1,11 @@
+import { Helmet } from 'react-helmet';
 
 const AboutUs = () => {
     return (
         <div>
+            <Helmet>
+                <title>About Us</title>
+            </Helmet>
             <div className="bg-[rgba(26,29,31,0.70)]">
                     <h1 className="text-2xl lg:text-4xl font-bold text-white text-center">About Us</h1>
             </div>

@@ -45,7 +45,9 @@ const router = createBrowserRouter([
       },
       {
         path: "/updateProfile",
-        element: <UpdateProfile></UpdateProfile>
+        element: <PrivateRoute>
+            <UpdateProfile></UpdateProfile>
+        </PrivateRoute>
       },
       {
         path: "/login",
@@ -69,3 +71,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
    </FirebaseProvider>
   </React.StrictMode>,
 )
+ 

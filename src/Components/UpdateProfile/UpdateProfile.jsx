@@ -2,7 +2,7 @@
 import useAuth from "../useAuth/useAuth";
 import { toast } from "sonner";
 import { getAuth, updateProfile } from "firebase/auth";
-
+import { Helmet } from 'react-helmet';
 // export default UpdateProfile;
 
 const Profile = () => {
@@ -29,7 +29,7 @@ const Profile = () => {
 
 
             toast.dismiss(toastId)
-            toast.success("Photo updated")
+            toast.success("Name and Image updated")
         }
         catch {
             toast.dismiss(toastId)
@@ -41,9 +41,10 @@ const Profile = () => {
 
     return (
         <>
-
-            
-             <div>
+        <div>
+            <Helmet>
+                <title>Update Profile</title>
+            </Helmet>
             <div
                 className="flex flex-col mx-auto max-w-md p-6 dark:bg-base-100 shadow-2xl rounded-md sm:p-10 mt-10 dark:text-gray-800">
                 <div className="mb-8 text-center">

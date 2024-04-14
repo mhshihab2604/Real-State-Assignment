@@ -7,7 +7,10 @@ const PrivateRoute = ({children}) => {
 
 
     if(loading){
-        return <h1 className="text-4xl">Loading</h1>
+        return  <div className="flex justify-center items-center h-screen">
+                    <span className="loading loading-spinner loading-lg"></span>
+                </div>
+      
     }
     if(!user){
         return <Navigate to="/login" state={location?.pathname || "/"}></Navigate>

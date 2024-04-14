@@ -96,8 +96,6 @@ const Header = () => {
                 <button
                 onClick={handleSignOut}
                 className="p-1 rounded  bg-[#71B100] text-white border-none">Logout</button>
-
-                <Link to='/profilePage'>User Profile</Link>
             </div>
           </div>
         ) : (

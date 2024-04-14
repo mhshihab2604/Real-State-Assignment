@@ -3,7 +3,7 @@ import useAuth from "../useAuth/useAuth";
 import SocialLogin from "../SocialLogin/SocialLogin";
 import { useLocation, useNavigate } from "react-router-dom";
 import { toast } from "sonner";
-
+import { Helmet } from 'react-helmet';
 const Login = () => {
   const { signInUser } = useAuth();
 
@@ -31,6 +31,9 @@ const Login = () => {
   };
   return (
     <div>
+      <Helmet>
+          <title>Login</title>
+      </Helmet>
       <div className="w-full max-w-md p-8 space-y-3 rounded-xl dark:bg-base-100 shadow-2xl dark:text-gray-800 mx-auto mt-10">
         <h1 className="text-3xl font-bold text-center">Login Now</h1>
         <form
