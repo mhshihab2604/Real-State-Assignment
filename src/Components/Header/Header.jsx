@@ -44,8 +44,8 @@ const Header = () => {
             <Link className="hover:bg-[#71B100] p-5" to="/aboutUs">
               About Us
             </Link>
-            <Link className="hover:bg-[#71B100] p-5" to="/contact">
-              Contact
+            <Link className="hover:bg-[#71B100] p-5" to="/gallery">
+              Gallery
             </Link>
             <Link className="hover:bg-[#71B100] p-5" to="/register">
               Register
@@ -68,8 +68,8 @@ const Header = () => {
             <Link className="hover:bg-[#71B100] p-5" to="/aboutUs">
               About Us
             </Link>
-            <Link className="hover:bg-[#71B100] p-5" to="/contact">
-              Contact
+            <Link className="hover:bg-[#71B100] p-5" to="/gallery">
+              Gallery
             </Link>
             <Link className="hover:bg-[#71B100] p-5" to="/register">
               Register

@@ -15,9 +15,9 @@ import {
 } from "react-router-dom";
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 import { Toaster } from 'sonner';
-import Contact from './Components/Contact/Contact';
 import AboutUs from './Components/AboutUs/AboutUs';
 import UpdateProfile from './Components/UpdateProfile/UpdateProfile';
+import Gallery from './Components/Gallery/Gallery';
 
 const router = createBrowserRouter([
   {
@@ -36,8 +36,8 @@ const router = createBrowserRouter([
         loader: () => fetch("state.json")
       },
       {
-        path: "/contact",
-        element: <Contact></Contact>
+        path: "/gallery",
+        element: <Gallery></Gallery>
       },
       {
         path: "/register",
