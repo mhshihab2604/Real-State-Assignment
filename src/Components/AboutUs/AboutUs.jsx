@@ -12,10 +12,10 @@ const AboutUs = () => {
             <section className="p-6 dark:bg-gray-100 dark:text-gray-800">
                 <div className="container grid gap-6 mx-auto  items-center lg:grid-cols-2 xl:grid-cols-5">
                     <div className="w-full px-6 py-16 rounded-md sm:px-12 md:px-16 xl:col-span-2 dark:bg-gray-50">
-                        <span className="block mb-2 dark:text-[#71B100]">About Shina</span>
+                        <span className="block mb-2 dark:text-[#71B100]">About Nafshi</span>
                         <h1 className="text-4xl font-extrabold dark:text-gray-900">Who We Are</h1>
                         <p className="my-8">
-                            Shina is a premium WordPress theme for real estate agents where modern <br /> aesthetics are combined with tasteful simplicity and where the ease of use is <br /> achieved without compromise in your ability to customise the design.
+                            Nafshi is a premium WordPress theme for real estate agents where modern <br /> aesthetics are combined with tasteful simplicity and where the ease of use is <br /> achieved without compromise in your ability to customise the design.
                         </p>
                         <p className="my-8">
                         Whether you are a real estate agent looking to build a website for your company or a <br /> web developer seeking a perfect WordPress theme for your next project, you are certain <br /> to appreciate the numerous features and benefits that our theme provides.

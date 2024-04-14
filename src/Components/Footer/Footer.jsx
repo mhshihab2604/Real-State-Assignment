@@ -19,7 +19,7 @@ const Footer = () => {
                     <aside className="space-y-5">
                         <p className="text-[#71B100]">Contact us</p>
                         <h1 className="text-2xl">Get in Touch</h1>
-                        <p>Shina Real Estate brings wide range of choice,steadily updated <br />property list and market trend for you to figure out your right <br />decision.It is a premium WordPress theme for real estate where <br /> modern aesthetics are combined with tasteful simplicity.</p>
+                        <p>Nafshi Real Estate brings wide range of choice,steadily updated <br />property list and market trend for you to figure out your right <br />decision.It is a premium WordPress theme for real estate where <br /> modern aesthetics are combined with tasteful simplicity.</p>
                         <div>
                             <h1 className="flex items-center gap-2"><IoIosCall className="text-[#71B100]"></IoIosCall>Call us 1-800-555-1234</h1>
                             <h1 className="flex items-center gap-2"><BiSolidMessage className="text-[#71B100]"></BiSolidMessage>info@example.com</h1>

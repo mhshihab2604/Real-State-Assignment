@@ -111,7 +111,7 @@ const Home = () => {
                         <div className="max-w-xs bg-base-100 shadow-2xl border-2 dark:text-gray-900">
                             <img src="https://i.ibb.co/rfkmwRf/Developer2-removebg-preview-removebg-preview.jpg" alt="" className="object-cover object-center w-80 h-96" />
                             <div className="mb-2 text-center p-2">
-                                <h2 className="text-lg font-semibold tracking-wide">Ghaly Marco</h2>
+                                <h2 className="text-lg font-semibold tracking-wide">Mehedi Hasan</h2>
                                 <small className="dark:text-[#71B100]">Real Estate Broker</small>
                             </div>
                         </div>

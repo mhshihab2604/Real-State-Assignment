@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import useAuth from "../useAuth/useAuth";
 import { useState } from "react";
+import myImage from "../../assets/web_logo.png"
+
 const Header = () => {
   const { logout, user } = useAuth();
   const [showDropdown, setShowDropdown] = useState(false)
@@ -58,7 +60,13 @@ const Header = () => {
             </Link>
             </ul>
           </div>
-          <img src="https://i.ibb.co/qd1mwsm/Logo.png" alt="" />
+         <div className="flex items-center -space-x-4">
+            <img className="w-24" src={myImage} alt="" />
+            <div className="-space-y-1">
+              <h1 className="text-white font-extrabold">Nafshi</h1>
+              <p className="text-gray-300 text-sm">Real State</p>
+            </div>
+         </div>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 text-white gap-5">
