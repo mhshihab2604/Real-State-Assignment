@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import useAuth from "../useAuth/useAuth";
 import { useState } from "react";
 import myImage from "../../assets/web_logo.png"
-
 const Header = () => {
   const { logout, user } = useAuth();
   const [showDropdown, setShowDropdown] = useState(false)
@@ -55,6 +54,9 @@ const Header = () => {
             <Link className="hover:bg-[#71B100] p-5" to="/login">
               Login
             </Link>
+            <Link className="hover:bg-[#71B100] p-5" to="/userProfile">
+              User Profile
+            </Link>
             <Link className="hover:bg-[#71B100] p-5" to="/updateProfile">
               Update Profile
             </Link>
@@ -85,26 +87,31 @@ const Header = () => {
             <Link className="hover:bg-[#71B100] p-5" to="/login">
               Login
             </Link>
+            <Link className="hover:bg-[#71B100] p-5" to="/userProfile">
+              User Profile
+            </Link>
             <Link className="hover:bg-[#71B100] p-5" to="/updateProfile">
               Update Profile
             </Link>
           </ul>
         </div>
         {user ? (
-          <div className="navbar-end relative">
-            <img
-              className="w-10 h-10 rounded-full"
-              src={user.photoURL}
-              alt=""
-              onClick={() => setShowDropdown(!showDropdown)}
-            />
+          <div className="navbar-end relative space-x-2">
+            <div className="lg:tooltip lg:tooltip-left" data-tip={`${user.displayName},${user.email}`}>
+              <img
+                className="w-10 h-10 rounded-full"
+                src={user.photoURL}
+                alt=""
+                onClick={() => setShowDropdown(!showDropdown)}
+              />
+            </div>
             <div className={showDropdown ? "userDropDown showDropdown space-y-2" : "userDropDown"} >
                 <h1 className="text-xl font-medium">Name:{user.displayName}</h1>
                 <h1 className="font-medium">{user.email}</h1>
-                <button
+            </div>
+            <button
                 onClick={handleSignOut}
                 className="p-1 rounded  bg-[#71B100] text-white border-none">Logout</button>
-            </div>
           </div>
         ) : (
           <div className="navbar-end">
@@ -124,3 +131,4 @@ const Header = () => {
 };
 
 export default Header;
+

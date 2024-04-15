@@ -10,7 +10,6 @@ const Profile = () => {
 
     const handleUpdate = async(e)=>{
         e.preventDefault()
-        console.log("llllllllllll");
         const form = e.target
         const userName = form.name.value
         const image = form.image.value

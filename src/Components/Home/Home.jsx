@@ -1,6 +1,9 @@
 import 'animate.css';
 import Residentials from '../Residentials/Residentials';
 import { Helmet } from 'react-helmet';
+import { IoIosHome } from "react-icons/io";
+import { FaRegUser } from "react-icons/fa";
+import { IoMdLogIn } from "react-icons/io";
 const Home = () => {
     return (
         <div>
@@ -93,6 +96,37 @@ const Home = () => {
                     </div>
                 </div>
             </div> 
+            <div className='container mx-auto flex justify-center mt-20'>
+                <div className="stats shadow w-full h-40 border-b-2 border-[#23BE0A] rounded-xl">
+                    <div className="stat">
+                        <div className="stat-figure text-secondary">
+                        <IoIosHome className='text-[#71B100] text-3xl'></IoIosHome>
+                        </div>
+                        <div className="stat-title">Sale</div>
+                        <div className="stat-value">31K</div>
+                        <div className="stat-desc">Jan 1st - Feb 1st</div>
+                    </div>
+                    
+                    <div className="stat">
+                        <div className="stat-figure text-secondary">
+                        <FaRegUser className='text-[#71B100] text-2xl'></FaRegUser>
+                        </div>
+                        <div className="stat-title">New Users</div>
+                        <div className="stat-value">4,200</div>
+                        <div className="stat-desc">↗︎ 400 (22%)</div>
+                    </div>
+                    
+                    <div className="stat">
+                        <div className="stat-figure text-secondary">
+                        <IoMdLogIn className='text-[#71B100] text-3xl'></IoMdLogIn>
+                        </div>
+                        <div className="stat-title">New Registers</div>
+                        <div className="stat-value">1,200</div>
+                        <div className="stat-desc">↘︎ 90 (14%)</div>
+                    </div>
+                    
+                </div>
+            </div>
             <Residentials></Residentials>
             <div className='mt-28'>
                 <div className='text-center space-y-2'>

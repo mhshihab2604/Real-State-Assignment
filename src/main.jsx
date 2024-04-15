@@ -18,6 +18,7 @@ import { Toaster } from 'sonner';
 import AboutUs from './Components/AboutUs/AboutUs';
 import UpdateProfile from './Components/UpdateProfile/UpdateProfile';
 import Gallery from './Components/Gallery/Gallery';
+import UserProfile from './Components/UserProfile/UserProfile';
 
 const router = createBrowserRouter([
   {
@@ -37,11 +38,19 @@ const router = createBrowserRouter([
       },
       {
         path: "/gallery",
-        element: <Gallery></Gallery>
+        element: <PrivateRoute>
+            <Gallery></Gallery>
+        </PrivateRoute>
       },
       {
         path: "/register",
         element: <Register></Register>
+      },
+      {
+        path: "/userProfile",
+        element: <PrivateRoute>
+          <UserProfile></UserProfile>
+        </PrivateRoute>
       },
       {
         path: "/updateProfile",
