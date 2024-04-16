@@ -1,8 +1,30 @@
-# React + Vite
+# Project Title
+- Nafshi 🏘
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Project Details
+- A react project with some estates , where you can see states details to click view details button. you can register and login in my website,You update your profile also.
+and there are two privates route in my website,if you are logged in then that will be show.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Authors
+- [@mhshihab2604](https://github.com/programming-hero-web-course-4/b9a9-real-estate-mhshihab2604)
+
+## Live Links
+- Live Link: (https://real-state-project-2604.netlify.app/)
+
+## Features
+- Property Details
+- Private Route
+- Agent Profiles
+- Mobile, Tablet and Desktop views.
+- Live previews
+- Registration and login 
+- You can update you Profile
+- Feedback and Iteration
+
+
+## Used Package
+- AOS Package,
+- Animate.css,
+- React Hook form,

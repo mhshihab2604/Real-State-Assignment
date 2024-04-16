@@ -51,9 +51,6 @@ const Header = () => {
             <Link className="hover:bg-[#71B100] p-5" to="/register">
               Register
             </Link>
-            <Link className="hover:bg-[#71B100] p-5" to="/login">
-              Login
-            </Link>
             <Link className="hover:bg-[#71B100] p-5" to="/userProfile">
               User Profile
             </Link>
@@ -83,9 +80,6 @@ const Header = () => {
             </Link>
             <Link className="hover:bg-[#71B100] p-5" to="/register">
               Register
-            </Link>
-            <Link className="hover:bg-[#71B100] p-5" to="/login">
-              Login
             </Link>
             <Link className="hover:bg-[#71B100] p-5" to="/userProfile">
               User Profile
